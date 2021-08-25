@@ -19,6 +19,3 @@ WORKDIR /packages
 RUN ls
 RUN pip install -r requirements.txt
 RUN behave
-
-ADD . /home/code
-WORKDIR /home/code
