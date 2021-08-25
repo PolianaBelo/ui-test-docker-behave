@@ -15,6 +15,7 @@ def before_all(context):
 
     chrome_options = webdriver.ChromeOptions()
     chrome_options.add_argument('--disable-translate')
+    chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('headless')
     context.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
 
